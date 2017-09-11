@@ -1,0 +1,2 @@
+root@puppetmaster:~/chapter2# puppet master --configprint manifest
+/etc/puppetlabs/code/environments/production/manifests

@@ -1,0 +1,7 @@
+root@puppetmaster:~/chapter7# puppet apply 17_hash6_code.pp
+Notice: Compiled catalog for puppetmaster.example.net in environment production in 0.09 seconds
+Notice: User: ben, UID: 2203, HOME: /home/ben
+Notice: /Stage[main]/Users/Users::User[ben]/Notify[User: ben, UID: 2203, HOME: /home/ben]/message: defined 'message' as 'User: ben, UID: 2203, HOME: /home/ben'
+Notice: User: jones, UID: 2204, HOME: /home/jones
+Notice: /Stage[main]/Users/Users::User[jones]/Notify[User: jones, UID: 2204, HOME: /home/jones]/message: defined 'message' as 'User: jones, UID: 2204, HOME: /home/jones'
+Notice: Applied catalog in 0.07 seconds

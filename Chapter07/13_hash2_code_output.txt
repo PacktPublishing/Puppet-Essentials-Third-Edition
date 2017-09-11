@@ -1,0 +1,5 @@
+root@puppetmaster:~/chapter7# puppet apply 13_hash2_code.pp
+Notice: Compiled catalog for puppetmaster.example.net in environment production in 0.12 seconds
+Notice: Valid Hash
+Notice: /Stage[main]/Users/Notify[Valid Hash]/message: defined 'message' as 'Valid Hash'
+Notice: Applied catalog in 0.07 seconds

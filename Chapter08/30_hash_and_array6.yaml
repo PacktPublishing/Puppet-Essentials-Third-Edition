@@ -1,0 +1,8 @@
+# common.yaml
+haproxy_settings:
+  log_socket: /dev/log
+  log_level: info
+  user: haproxy
+  group: haproxy
+  daemon: true
+

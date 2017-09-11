@@ -1,0 +1,17 @@
+# Third Party modules
+mod "puppetlabs/concat", '3.0.0' # postgresql requires concat < 3.0.0
+mod "puppetlabs/stdlib", :latest
+mod "puppetlabs/aws", :latest
+mod "jdowning/rbenv", :latest
+mod "puppet/archive", :latest
+mod "puppetlabs/inifile", :latest
+# Used by profile::puppet::server
+mod 'puppetlabs/postgresql', :latest
+mod 'puppetlabs/puppetdb', :latest
+mod 'puppet/puppetserver',
+  :git => "https://github.com/voxpupuli/puppet-puppetserver.git",
+  :tag => '2.1.0'
+mod 'puppetlabs/puppetserver_gem', :latest
+mod 'puppet/r10k', :latest
+# mod 'puppet/puppetboard', :latest
+

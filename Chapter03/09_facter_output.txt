@@ -1,0 +1,2 @@
+root@puppetmaster:~/chapter3# facter -p | grep hello
+hello => Hello, world!

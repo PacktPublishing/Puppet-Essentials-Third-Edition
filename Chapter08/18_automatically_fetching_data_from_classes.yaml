@@ -1,0 +1,2 @@
+# node/cacti01.example.net.yaml
+cacti::redirect: false

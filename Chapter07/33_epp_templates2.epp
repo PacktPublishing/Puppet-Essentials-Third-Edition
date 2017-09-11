@@ -1,0 +1,4 @@
+<%- |
+  String $local_variable,
+  Array  $local_array
+| -%>

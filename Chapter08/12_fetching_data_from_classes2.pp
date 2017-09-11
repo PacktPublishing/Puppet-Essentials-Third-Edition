@@ -1,0 +1,2 @@
+$plugins = hiera('reporting::plugins', [])
+

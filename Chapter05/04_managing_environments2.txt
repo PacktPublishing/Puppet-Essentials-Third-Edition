@@ -1,0 +1,3 @@
+# /etc/puppetlabs/code/environments/production/environment.conf
+modulepath = modules:site-modules
+

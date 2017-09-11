@@ -1,0 +1,5 @@
+# /etc/puppetlabs/code/environments/production/hieradata/role/postgres.yaml
+reporting::plugins:
+  - iops
+  - cpuload
+

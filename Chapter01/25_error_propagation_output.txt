@@ -1,0 +1,4 @@
+root@puppetmaster:~/chapter1# puppet apply 24_error_propagation.pp
+Notice: Compiled catalog for puppetmaster.example.net in environment production in 0.09 seconds
+Error: /Stage[main]/Main/File[/etc/haproxy/haproxy.cfg]: Could not evaluate: Could not retrieve information from environment production source(s) puppet:///modules/haproxy/etc/haproxy.cfg
+Notice: Applied catalog in 0.06 seconds

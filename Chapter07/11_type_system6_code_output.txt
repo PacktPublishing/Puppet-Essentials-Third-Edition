@@ -1,0 +1,2 @@
+root@puppetmaster:~/chapter7# puppet apply 11_type_system6_code.pp
+Error: Evaluation Error: Error while evaluating a Resource Statement, Class[Ssh]: parameter 'allowed_users' expects a value of type Undef or Array, got String at /root/chapter7/11_type_system6_code.pp:11:1 on node puppetmaster.example.net

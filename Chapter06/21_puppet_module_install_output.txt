@@ -1,0 +1,12 @@
+root@puppetmaster:~/chapter6# puppet module install puppetlabs-puppetdb
+Notice: Preparing to install into /etc/puppetlabs/code/environments/production/modules ...
+Notice: Downloading from https://forgeapi.puppet.com ...
+Notice: Installing -- do not interrupt ...
+/etc/puppetlabs/code/environments/production/modules
+└─┬ puppetlabs-puppetdb (v6.0.1)
+  ├── puppetlabs-firewall (v1.9.0)
+  ├── puppetlabs-inifile (v1.6.0)
+  └─┬ puppetlabs-postgresql (v5.1.0)
+    ├── puppetlabs-apt (v4.1.0)
+    ├── puppetlabs-concat (v4.0.1)
+    └── puppetlabs-stdlib (v4.19.0)

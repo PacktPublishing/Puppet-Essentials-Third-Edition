@@ -1,0 +1,5 @@
+# common.yaml
+apache::default_ssl_cert: /etc/puppetlabs/puppet/ssl/certs/%{::clientcert}.pem
+apache::default_ssl_key: /etc/puppetlabs/puppet/ssl/private_keys/%{::clientcert}.pem
+apache::purge_configs: false
+

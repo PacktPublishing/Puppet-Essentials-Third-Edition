@@ -1,0 +1,57 @@
+root@puppetmaster:~# wget http://apt.puppetlabs.com/puppetlabs-release-pc1-jessie.deb
+--2017-08-31 12:06:18--  http://apt.puppetlabs.com/puppetlabs-release-pc1-jessie.deb
+Resolving apt.puppetlabs.com (apt.puppetlabs.com)... 54.230.128.195, 54.230.128.40, 54.230.128.124, ...
+Connecting to apt.puppetlabs.com (apt.puppetlabs.com)|54.230.128.195|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 13788 (13K) [application/x-debian-package]
+Saving to: ‘puppetlabs-release-pc1-jessie.deb’
+
+puppetlabs-release-pc1-jessie.deb                 100%[===============================================================================================================>]  13.46K  --.-KB/s   in 0s
+
+2017-08-31 12:06:18 (38.1 MB/s) - ‘puppetlabs-release-pc1-jessie.deb’ saved [13788/13788]
+
+root@puppetmaster:~# dpkg -i puppetlabs-release-pc1-jessie.deb
+Selecting previously unselected package puppetlabs-release-pc1.
+(Reading database ... 30052 files and directories currently installed.)
+Preparing to unpack puppetlabs-release-pc1-jessie.deb ...
+Unpacking puppetlabs-release-pc1 (1.1.0-2jessie) ...
+Setting up puppetlabs-release-pc1 (1.1.0-2jessie) ...
+root@puppetmaster:~# apt-get update
+Ign http://ftp.de.debian.org jessie InRelease
+Ign http://apt.puppetlabs.com jessie InRelease
+Hit http://security.debian.org jessie/updates InRelease
+Hit http://ftp.de.debian.org jessie-updates InRelease
+Get:1 http://apt.puppetlabs.com jessie Release.gpg [801 B]
+Hit http://ftp.de.debian.org jessie Release.gpg
+Get:2 http://apt.puppetlabs.com jessie Release [88.7 kB]
+Hit http://ftp.de.debian.org jessie Release
+Hit http://security.debian.org jessie/updates/main Sources
+Hit http://ftp.de.debian.org jessie-updates/main Sources
+Hit http://security.debian.org jessie/updates/main amd64 Packages
+Get:3 http://ftp.de.debian.org jessie-updates/main amd64 Packages/DiffIndex [8,392 B]
+Hit http://security.debian.org jessie/updates/main Translation-en
+Get:4 http://ftp.de.debian.org jessie-updates/main Translation-en/DiffIndex [3,196 B]
+Hit http://ftp.de.debian.org jessie/main Sources
+Get:5 http://apt.puppetlabs.com jessie/PC1 amd64 Packages [21.6 kB]
+Hit http://ftp.de.debian.org jessie/main amd64 Packages
+Hit http://ftp.de.debian.org jessie/main Translation-en
+Ign http://apt.puppetlabs.com jessie/PC1 Translation-en_US
+Ign http://apt.puppetlabs.com jessie/PC1 Translation-en
+Fetched 123 kB in 2s (55.0 kB/s)
+Reading package lists... Done
+root@puppetmaster:~# apt-get install puppetserver
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following extra packages will be installed:
+  ca-certificates-java java-common libasyncns0 libflac8 libice6 libnspr4 libnss3 libogg0 libpulse0 libsctp1 libsm6 libsndfile1 libvorbis0a libvorbisenc2 libx11-xcb1 libxtst6 lksctp-tools
+  openjdk-7-jre-headless puppet-agent tzdata-java x11-common
+Suggested packages:
+  default-jre equivs pulseaudio icedtea-7-jre-jamvm libnss-mdns sun-java6-fonts fonts-dejavu-extra fonts-ipafont-gothic fonts-ipafont-mincho fonts-wqy-microhei fonts-wqy-zenhei fonts-indic
+The following NEW packages will be installed:
+  ca-certificates-java java-common libasyncns0 libflac8 libice6 libnspr4 libnss3 libogg0 libpulse0 libsctp1 libsm6 libsndfile1 libvorbis0a libvorbisenc2 libx11-xcb1 libxtst6 lksctp-tools
+  openjdk-7-jre-headless puppet-agent puppetserver tzdata-java x11-common
+0 upgraded, 22 newly installed, 0 to remove and 0 not upgraded.
+Need to get 93.4 MB of archives.
+After this operation, 202 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y

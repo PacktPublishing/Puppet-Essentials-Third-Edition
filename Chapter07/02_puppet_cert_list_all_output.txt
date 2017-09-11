@@ -1,0 +1,2 @@
+root@puppetmaster:~/chapter7# puppet cert list --all
++ "puppetmaster.example.net" (SHA256) 90:3D:74:00:AA:5C:5A:4E:09:12:D9:B8:46:4D:E0:E7:FA:7C:44:03:47:53:E8:B9:95:98:5C:6C:B4:0D:4E:C3 (alt names: "DNS:puppet", "DNS:puppetmaster.example.net")

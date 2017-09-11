@@ -1,0 +1,1 @@
+root@puppetmaster:~/chapter2# puppet config set --section agent server puppetmaster.example.net

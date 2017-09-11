@@ -1,0 +1,1 @@
+root@puppetmaster# systemctl start puppetserver

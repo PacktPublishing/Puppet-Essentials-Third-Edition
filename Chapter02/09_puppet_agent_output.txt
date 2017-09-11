@@ -1,0 +1,7 @@
+root@puppetmaster:~/chapter2# puppet agent --test
+Info: Using configured environment 'production'
+Info: Retrieving pluginfacts
+Info: Retrieving plugin
+Info: Caching catalog for puppetmaster.example.net
+Info: Applying configuration version '1504177957'
+Notice: Applied catalog in 0.02 seconds

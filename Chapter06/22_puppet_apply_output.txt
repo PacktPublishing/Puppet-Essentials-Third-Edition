@@ -1,0 +1,58 @@
+root@puppetmaster:~/chapter6# puppet apply -e 'include puppetdb, puppetdb::master::config'
+Warning: /etc/puppetlabs/puppet/hiera.yaml: Use of 'hiera.yaml' version 3 is deprecated. It should be converted to version 5
+   (in /etc/puppetlabs/puppet/hiera.yaml)
+Warning: This method is deprecated, please use the stdlib validate_legacy function, with Pattern[]. There is further documentation for validate_legacy function in the README. at ["/etc/puppetlabs/code/environments/production/modules/puppetdb/manifests/server.pp", 91]:["unknown", 1]
+   (at /etc/puppetlabs/code/environments/production/modules/stdlib/lib/puppet/functions/deprecation.rb:25:in `deprecation')
+Warning: This method is deprecated, please use match expressions with Stdlib::Compat::Array instead. They are described at https://docs.puppet.com/puppet/latest/reference/lang_data_type.html#match-expressions. at ["/etc/puppetlabs/code/environments/production/modules/apt/manifests/pin.pp", 43]:
+   (at /etc/puppetlabs/code/environments/production/modules/stdlib/lib/puppet/functions/deprecation.rb:25:in `deprecation')
+Warning: This method is deprecated, please use match expressions with Stdlib::Compat::String instead. They are described at https://docs.puppet.com/puppet/latest/reference/lang_data_type.html#match-expressions. at ["/etc/puppetlabs/code/environments/production/modules/concat/manifests/fragment.pp", 18]:
+   (at /etc/puppetlabs/code/environments/production/modules/stdlib/lib/puppet/functions/deprecation.rb:25:in `deprecation')
+Notice: Compiled catalog for puppetmaster.example.net in environment production in 1.41 seconds
+Notice: /Stage[main]/Postgresql::Server::Install/Package[postgresql-server]/ensure: created
+Notice: /Stage[main]/Postgresql::Server::Config/Concat[/etc/postgresql/9.6/main/pg_hba.conf]/File[/etc/postgresql/9.6/main/pg_hba.conf]/content: content changed '{md5}cbf62fe357451a5b84acf6e43e82329f' to '{md5}3bdb96f559da4d3e51b54c031a1b7899'
+Notice: /Stage[main]/Postgresql::Server::Config/Postgresql::Server::Config_entry[listen_addresses]/Postgresql_conf[listen_addresses]/ensure: created
+Notice: /Stage[main]/Postgresql::Server::Config/Concat[/etc/postgresql/9.6/main/pg_ident.conf]/File[/etc/postgresql/9.6/main/pg_ident.conf]/content: content changed '{md5}f11c8332d3f444148c0b8ee83ec5fc6d' to '{md5}9300ac105fe777787ac9e793b8df8d25'
+Notice: /Stage[main]/Postgresql::Server::Service/Anchor[postgresql::server::service::begin]: Triggered 'refresh' from 1 events
+Notice: /Stage[main]/Postgresql::Server::Service/Service[postgresqld]: Triggered 'refresh' from 1 events
+Notice: /Stage[main]/Postgresql::Server::Service/Anchor[postgresql::server::service::end]: Triggered 'refresh' from 1 events
+Notice: /Stage[main]/Postgresql::Server::Reload/Exec[postgresql_reload]: Triggered 'refresh' from 1 events
+Notice: /Stage[main]/Puppetdb::Database::Postgresql/Postgresql::Server::Db[puppetdb]/Postgresql::Server::Role[puppetdb]/Postgresql_psql[CREATE ROLE puppetdb ENCRYPTED PASSWORD ****]/command: command changed 'notrun' to 'CREATE ROLE "puppetdb" ENCRYPTED PASSWORD '$NEWPGPASSWD' LOGIN NOCREATEROLE NOCREATEDB NOSUPERUSER  CONNECTION LIMIT -1'
+Notice: /Stage[main]/Puppetdb::Database::Postgresql/Postgresql::Server::Db[puppetdb]/Postgresql::Server::Database[puppetdb]/Postgresql_psql[CREATE DATABASE "puppetdb"]/command: command changed 'notrun' to 'CREATE DATABASE "puppetdb" WITH TEMPLATE = "template0"   '
+Notice: /Stage[main]/Puppetdb::Database::Postgresql/Postgresql::Server::Db[puppetdb]/Postgresql::Server::Database[puppetdb]/Postgresql_psql[REVOKE CONNECT ON DATABASE "puppetdb" FROM public]: Triggered 'refresh' from 1 events
+Notice: /Stage[main]/Puppetdb::Database::Postgresql/Postgresql::Server::Extension[pg_trgm]/Postgresql_psql[Add pg_trgm extension to puppetdb]/command: command changed 'notrun' to 'CREATE EXTENSION "pg_trgm"'
+Notice: /Stage[main]/Puppetdb::Database::Postgresql/Postgresql::Server::Db[puppetdb]/Postgresql::Server::Database_grant[GRANT puppetdb - all - puppetdb]/Postgresql::Server::Grant[database:GRANT puppetdb - all - puppetdb]/Postgresql_psql[grant:database:GRANT puppetdb - all - puppetdb]/command: command changed 'notrun' to 'GRANT ALL ON DATABASE "puppetdb" TO
+      "puppetdb"'
+Notice: /Stage[main]/Puppetdb::Server/Package[puppetdb]/ensure: created
+Notice: /Stage[main]/Puppetdb::Server::Global/File[/etc/puppetlabs/puppetdb/conf.d/config.ini]/owner: owner changed 'root' to 'puppetdb'
+Notice: /Stage[main]/Puppetdb::Server::Global/File[/etc/puppetlabs/puppetdb/conf.d/config.ini]/group: group changed 'root' to 'puppetdb'
+Notice: /Stage[main]/Puppetdb::Server::Global/File[/etc/puppetlabs/puppetdb/conf.d/config.ini]/mode: mode changed '0644' to '0600'
+Notice: /Stage[main]/Puppetdb::Server::Database/File[/etc/puppetlabs/puppetdb/conf.d/database.ini]/owner: owner changed 'root' to 'puppetdb'
+Notice: /Stage[main]/Puppetdb::Server::Database/File[/etc/puppetlabs/puppetdb/conf.d/database.ini]/group: group changed 'root' to 'puppetdb'
+Notice: /Stage[main]/Puppetdb::Server::Database/File[/etc/puppetlabs/puppetdb/conf.d/database.ini]/mode: mode changed '0644' to '0600'
+Notice: /Stage[main]/Puppetdb::Server::Database/Ini_setting[puppetdb_psdatabase_username]/ensure: created
+Notice: /Stage[main]/Puppetdb::Server::Database/Ini_setting[puppetdb_psdatabase_password]/ensure: created
+Notice: /Stage[main]/Puppetdb::Server::Database/Ini_setting[puppetdb_classname]/ensure: created
+Notice: /Stage[main]/Puppetdb::Server::Database/Ini_setting[puppetdb_subprotocol]/ensure: created
+Notice: /Stage[main]/Puppetdb::Server::Database/Ini_setting[puppetdb_pgs]/ensure: created
+Notice: /Stage[main]/Puppetdb::Server::Database/Ini_setting[puppetdb_subname]/ensure: created
+Notice: /Stage[main]/Puppetdb::Server::Database/Ini_setting[puppetdb_gc_interval]/ensure: created
+Notice: /Stage[main]/Puppetdb::Server::Database/Ini_setting[puppetdb_node_ttl]/ensure: created
+Notice: /Stage[main]/Puppetdb::Server::Database/Ini_setting[puppetdb_node_purge_ttl]/ensure: created
+Notice: /Stage[main]/Puppetdb::Server::Database/Ini_setting[puppetdb_report_ttl]/ensure: created
+Notice: /Stage[main]/Puppetdb::Server::Database/Ini_setting[puppetdb_conn_max_age]/ensure: created
+Notice: /Stage[main]/Puppetdb::Server::Database/Ini_setting[puppetdb_conn_keep_alive]/ensure: created
+Notice: /Stage[main]/Puppetdb::Server::Database/Ini_setting[puppetdb_conn_lifetime]/ensure: created
+Notice: /Stage[main]/Puppetdb::Server::Jetty/File[/etc/puppetlabs/puppetdb/conf.d/jetty.ini]/owner: owner changed 'root' to 'puppetdb'
+Notice: /Stage[main]/Puppetdb::Server::Jetty/File[/etc/puppetlabs/puppetdb/conf.d/jetty.ini]/group: group changed 'root' to 'puppetdb'
+Notice: /Stage[main]/Puppetdb::Server::Jetty/File[/etc/puppetlabs/puppetdb/conf.d/jetty.ini]/mode: mode changed '0644' to '0600'
+Notice: /Stage[main]/Puppetdb::Server::Jetty/Ini_setting[puppetdb_host]/ensure: created
+Notice: /Stage[main]/Puppetdb::Server::Puppetdb/File[/etc/puppetlabs/puppetdb/conf.d/puppetdb.ini]/ensure: created
+Notice: /Stage[main]/Puppetdb::Server/Service[puppetdb]/ensure: ensure changed 'stopped' to 'running'
+Notice: /Stage[main]/Puppetdb::Master::Routes/File[/etc/puppetlabs/puppet/routes.yaml]/ensure: defined content as '{md5}be99db88f4c07058843ea356eb3469bf'
+Notice: /Stage[main]/Puppetdb::Master::Storeconfigs/Ini_setting[puppet.conf/master/storeconfigs]/ensure: created
+Notice: /Stage[main]/Puppetdb::Master::Storeconfigs/Ini_setting[puppet.conf/master/storeconfigs_backend]/ensure: created
+Notice: /Stage[main]/Puppetdb::Master::Puppetdb_conf/Ini_setting[puppetdbserver_urls]/ensure: created
+Notice: /Stage[main]/Puppetdb::Master::Puppetdb_conf/Ini_setting[soft_write_failure]/ensure: created
+Notice: /Stage[main]/Puppetdb::Master::Config/Service[puppetserver]/enable: enable changed 'false' to 'true'
+Notice: /Stage[main]/Puppetdb::Master::Config/Service[puppetserver]: Triggered 'refresh' from 2 events
+Notice: Applied catalog in 123.70 seconds

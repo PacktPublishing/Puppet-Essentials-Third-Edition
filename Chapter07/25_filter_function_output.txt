@@ -1,0 +1,5 @@
+root@puppetmaster:~/chapter7# puppet apply 25_filter_function.pp
+Notice: Compiled catalog for puppetmaster.example.net in environment production in 0.12 seconds
+Notice: Packages to install: [libjson-devel, libfoo-devel]
+Notice: /Stage[main]/Main/Notify[Packages to install: [libjson-devel, libfoo-devel]]/message: defined 'message' as 'Packages to install: [libjson-devel, libfoo-devel]'
+Notice: Applied catalog in 0.05 seconds

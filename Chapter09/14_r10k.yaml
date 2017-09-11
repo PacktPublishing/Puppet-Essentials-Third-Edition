@@ -1,0 +1,15 @@
+# /etc/puppetlabs/r10k/r10k.yaml
+---
+cachedir: '/var/cache/r10k'
+sources:
+  infrastructure:
+    remote: 'https://gitserver/infra/r10k-control-repo.git'
+    basedir: '/etc/puppetlabs/code/environments'
+  qa:
+    remote: 'https://gitserver/security/r10k-control-repo.git'
+    basedir: '/etc/puppetlabs/code/environments'
+    prefix: true
+  git:
+    provider: shellgit
+  forge:
+    # proxy: 'http://proxyserver:port'

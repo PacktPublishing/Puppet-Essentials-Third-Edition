@@ -1,0 +1,6 @@
+# role/httpsec.yaml
+apache::purge_configs: true
+apache::server_tokens: Minimal
+apache::server_signature: off
+apache::trace_enable: off
+

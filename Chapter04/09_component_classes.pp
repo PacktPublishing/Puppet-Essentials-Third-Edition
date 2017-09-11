@@ -1,0 +1,3 @@
+package { 'netcat':
+  ensure => 'installed',
+}

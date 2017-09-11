@@ -1,0 +1,4 @@
+digraph Resource_Cycles {
+  label = "Resource Cycles"
+"File[/etc/haproxy/haproxy.cfg]" -> "Service[haproxy]" -> "File[/etc/haproxy]" -> "File[/etc/haproxy/haproxy.cfg]"
+}

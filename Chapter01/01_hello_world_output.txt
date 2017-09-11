@@ -1,0 +1,5 @@
+root@puppetmaster:~/chapter1# puppet apply 01_hello_world.pp
+Notice: Compiled catalog for puppetmaster.example.net in environment production in 0.09 seconds
+Notice: Hello, world!
+Notice: /Stage[main]/Main/Notify[Hello, world!]/message: defined 'message' as 'Hello, world!'
+Notice: Applied catalog in 0.03 seconds

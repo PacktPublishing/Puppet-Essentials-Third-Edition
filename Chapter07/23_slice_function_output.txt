@@ -1,0 +1,7 @@
+root@puppetmaster:~/chapter7# puppet apply 23_slice_function.pp
+Notice: Compiled catalog for puppetmaster.example.net in environment production in 0.09 seconds
+Notice: Slice: [1, 2]
+Notice: /Stage[main]/Main/Notify[Slice: [1, 2]]/message: defined 'message' as 'Slice: [1, 2]'
+Notice: Slice: [3, 4]
+Notice: /Stage[main]/Main/Notify[Slice: [3, 4]]/message: defined 'message' as 'Slice: [3, 4]'
+Notice: Applied catalog in 0.07 seconds

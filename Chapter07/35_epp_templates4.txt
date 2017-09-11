@@ -1,0 +1,10 @@
+# ERB syntax
+<% @array.each do |element| -%>
+<%= element %>
+<% end -%>
+
+# EPP syntax
+<% $array.each |$element| { -%>
+<%= $element %>
+<% } -%>
+

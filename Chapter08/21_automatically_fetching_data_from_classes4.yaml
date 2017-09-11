@@ -1,0 +1,5 @@
+# node/sec02-sxf12.yaml
+apache::default_ssl_cert: /opt/ssl/custom.pem
+apache::default_ssl_key: /opt/ssl/custom.key
+apache::trace_enable: extended
+

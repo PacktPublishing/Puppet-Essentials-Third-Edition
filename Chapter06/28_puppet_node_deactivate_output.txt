@@ -1,0 +1,2 @@
+root@puppetmaster:~/chapter6# puppet node deactivate vax793.example.net
+Submitted 'deactivate node' for vax793.example.net with UUID d3df1e49-3ff4-4e97-8ce0-649a1b6e14bc

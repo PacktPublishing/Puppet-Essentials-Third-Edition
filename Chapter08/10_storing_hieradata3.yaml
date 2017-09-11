@@ -1,0 +1,3 @@
+#/etc/puppetlabs/.../hieradata/node/stats01.example.net.yaml
+reporting::server: localhost
+

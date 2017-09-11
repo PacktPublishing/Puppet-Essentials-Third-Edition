@@ -1,0 +1,2 @@
+root@puppetmaster:~/chapter7# puppet apply 16_hash5_code.pp
+Error: Evaluation Error: Error while evaluating a Resource Statement, Users::User[jones]: parameter 'home' expects a match for Pattern[/^\/.*/], got 'home/jones'  at /root/chapter7/16_hash5_code.pp:24 on node puppetmaster.example.net

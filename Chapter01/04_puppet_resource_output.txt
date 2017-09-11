@@ -1,0 +1,12 @@
+root@puppetmaster:~/chapter1# puppet resource user root
+user { 'root':
+  ensure           => 'present',
+  comment          => 'root',
+  gid              => '0',
+  home             => '/root',
+  password         => '$6$.ReMNl1I$GWiK2AbQaasXuX6r8aQji8Wo16LmP.YDFMeK4Cd4Txi/ESyS4iyn9s3eevUS4agYJVgx.QhXqABJtSOYjDM2R/',
+  password_max_age => '99999',
+  password_min_age => '0',
+  shell            => '/bin/bash',
+  uid              => '0',
+}

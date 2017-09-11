@@ -1,0 +1,9 @@
+root@puppetmaster:~/chapter9/concat# git remote add github https://github.com/puppetlabs/puppetlabs-concat.git
+root@puppetmaster:~/chapter9/concat# git pull github master
+remote: Counting objects: 2932, done.
+remote: Total 2932 (delta 0), reused 0 (delta 0), pack-reused 2932
+Receiving objects: 100% (2932/2932), 642.75 KiB | 672.00 KiB/s, done.
+Resolving deltas: 100% (1436/1436), done.
+From https://github.com/puppetlabs/puppetlabs-concat
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> github/master

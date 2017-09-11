@@ -1,0 +1,4 @@
+# /etc/puppetlabs/code/environments/production/hieradata/common.yaml
+reporting::server: stats01.example.net
+reporting::server_port: 9033
+

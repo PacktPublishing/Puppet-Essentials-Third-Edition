@@ -1,0 +1,10 @@
+<IfModule mpm_worker_module>
+ServerLimit  <%= $apache::apache_server_limit %>
+StartServers <%= $apache::apache_start_servers %>
+MaxClients   <%= $apache::apache_max_clients %>
+</IfModule>
+<% $apache::apache_ports.each  |$port| { -%>
+Listen <%= $port %>
+NameVirtualHost *:<%= $port %>
+<% } -%>
+

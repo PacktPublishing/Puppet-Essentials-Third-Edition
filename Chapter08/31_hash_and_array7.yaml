@@ -1,0 +1,5 @@
+# role/webserver.yaml
+haproxy_settings:
+  user: www-data
+  group: www-data
+

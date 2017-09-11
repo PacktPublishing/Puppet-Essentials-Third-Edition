@@ -1,0 +1,2 @@
+root@puppetmaster:~/chapter7# puppet apply 54_different_data_types2.pp
+Error: Evaluation Error: Comparison of: String > Integer, is not possible. Caused by 'A String is not comparable to a non String'. at /root/chapter7/54_different_data_types2.pp:1:33 on node puppetmaster.example.net

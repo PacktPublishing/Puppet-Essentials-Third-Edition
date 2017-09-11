@@ -1,0 +1,2 @@
+root@puppetmaster:~/chapter7# puppet apply 10_type_system5_code.pp
+Error: Evaluation Error: Error while evaluating a Resource Statement, Class[Ssh]: parameter 'cipher' expects a match for Enum['3des', 'blowfish', 'des'], got 'foo' at /root/chapter7/10_type_system5_code.pp:10:1 on node puppetmaster.example.net
