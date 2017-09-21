@@ -1,9 +1,0 @@
-root@puppetmaster:~/chapter7# puppet apply -e 'include my_motd'
-Notice: Compiled catalog for puppetmaster.example.net in environment production in 0.13 seconds
-Notice: /Stage[main]/My_motd/File[/etc/motd]/content: content changed '{md5}9830e3dbb6a828f2cc824db8db0ceaf7' to '{md5}a14aa94adc9efa8acd52e67e21239b09'
-Notice: Applied catalog in 0.10 seconds
-root@puppetmaster:~/chapter7# cat /etc/motd
-Welcome to puppetmaster.example.net.
-This system is managed by Puppet version 4.10.6.
-Local changes will be overwritten on next Puppet run.
-

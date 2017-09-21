@@ -1,2 +1,0 @@
-root@puppetmaster:~/chapter7# puppet apply 07_type_system4_code.pp
-Error: Evaluation Error: Error while evaluating a Resource Statement, Class[Ssh]: parameter 'server' expects a Boolean value, got String at /root/chapter7/07_type_system4_code.pp:9:1 on node puppetmaster.example.net

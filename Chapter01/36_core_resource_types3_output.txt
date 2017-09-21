@@ -1,3 +1,0 @@
-root@puppetmaster:~/chapter1# puppet apply 35_core_resource_types3.pp
-Notice: Compiled catalog for puppetmaster.example.net in environment production in 0.09 seconds
-Error: Parameter path failed on File[../demo.txt]: File paths must be fully qualified, not '../demo.txt' at /root/chapter1/35_core_resource_types3.pp:1

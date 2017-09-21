@@ -1,4 +1,0 @@
-root@puppetmaster# wget http://apt.puppetlabs.com/puppetlabs-release-pc1-jessie.deb
-root@puppetmaster# dpkg -i puppetlabs-release-pc1-jessie.debpuppetlabs-release-pc1-jessie.deb
-root@puppetmaster# apt-get update
-root@puppetmaster# apt-get install puppetserver

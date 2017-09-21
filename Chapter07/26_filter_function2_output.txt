@@ -1,5 +1,0 @@
-root@puppetmaster:~/chapter7# puppet apply 26_filter_function2.pp
-Notice: Compiled catalog for puppetmaster.example.net in environment production in 0.11 seconds
-Notice: Users to create: [jones, john]
-Notice: /Stage[main]/Main/Notify[Users to create: [jones, john]]/message: defined 'message' as 'Users to create: [jones, john]'
-Notice: Applied catalog in 0.05 seconds

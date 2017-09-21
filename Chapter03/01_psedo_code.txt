@@ -1,6 +1,0 @@
-if `grep -c ^processor /proc/cpuinfo` > 2 {
-  $load_warning = 4
-} else {
-  $load_warning = 2
-}
-

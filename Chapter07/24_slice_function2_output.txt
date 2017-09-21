@@ -1,7 +1,0 @@
-root@puppetmaster:~/chapter7# puppet apply 24_slice_function2.pp
-Notice: Compiled catalog for puppetmaster.example.net in environment production in 0.09 seconds
-Notice: HSlice: [[key 1, {value11 => 11, value12 => 12}], [key 2, {value21 => 21, value22 => 22}]]
-Notice: /Stage[main]/Main/Notify[HSlice: [[key 1, {value11 => 11, value12 => 12}], [key 2, {value21 => 21, value22 => 22}]]]/message: defined 'message' as 'HSlice: [[key 1, {value11 => 11, value12 => 12}], [key 2, {value21 => 21, value22 => 22}]]'
-Notice: HSlice: [[key 3, {value31 => 31, value32 => 32}], [key 4, {value41 => 41, value42 => 42}]]
-Notice: /Stage[main]/Main/Notify[HSlice: [[key 3, {value31 => 31, value32 => 32}], [key 4, {value41 => 41, value42 => 42}]]]/message: defined 'message' as 'HSlice: [[key 3, {value31 => 31, value32 => 32}], [key 4, {value41 => 41, value42 => 42}]]'
-Notice: Applied catalog in 0.07 seconds

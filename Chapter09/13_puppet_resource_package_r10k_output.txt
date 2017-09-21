@@ -1,5 +1,0 @@
-root@puppetmaster:~/chapter9/concat# puppet resource package r10k ensure=present provider=puppet_gem
-Notice: /Package[r10k]/ensure: created
-package { 'r10k':
-  ensure => ['2.5.5'],
-}

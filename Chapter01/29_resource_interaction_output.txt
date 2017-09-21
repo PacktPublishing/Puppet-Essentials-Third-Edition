@@ -1,6 +1,0 @@
-root@puppetmaster:~/chapter1# puppet apply 02_puppet_service.pp --noop
-Notice: Compiled catalog for puppetmaster.example.net in environment production in 0.34 seconds
-Notice: /Stage[main]/Main/Service[puppet]/enable: current_value true, should be false (noop)
-Notice: Class[Main]: Would have triggered 'refresh' from 1 events
-Notice: Stage[main]: Would have triggered 'refresh' from 1 events
-Notice: Applied catalog in 0.05 seconds

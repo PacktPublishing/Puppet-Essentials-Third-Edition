@@ -1,4 +1,0 @@
-root@puppetmaster:~/chapter1# puppet apply 02_puppet_service.pp
-Notice: Compiled catalog for puppetmaster.example.net in environment production in 0.33 seconds
-Notice: /Stage[main]/Main/Service[puppet]/enable: enable changed 'true' to 'false'
-Notice: Applied catalog in 0.08 seconds

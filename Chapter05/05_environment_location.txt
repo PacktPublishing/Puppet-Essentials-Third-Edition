@@ -1,3 +1,0 @@
-#/etc/puppetlabs/puppet/puppet.conf
-environmentpath = /etc/local/puppet/environments
-

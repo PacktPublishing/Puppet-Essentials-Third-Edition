@@ -1,5 +1,0 @@
-root@puppetmaster:~/chapter1# puppet apply 26_avoiding_circular_dependencies.pp
-Notice: Compiled catalog for puppetmaster.example.net in environment production in 0.34 seconds
-Error: Failed to apply catalog: Found 1 dependency cycle:
-(File[/etc/haproxy/haproxy.cfg] => Service[haproxy] => File[/etc/haproxy] => File[/etc/haproxy/haproxy.cfg])
-Try the '--graph' option and opening the resulting '.dot' file in OmniGraffle or GraphViz

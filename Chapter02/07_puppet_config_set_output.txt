@@ -1,1 +1,0 @@
-root@puppetmaster:~/chapter2# puppet config set --section master certname puppetmaster.example.net
